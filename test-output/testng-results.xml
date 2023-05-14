@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13000" started-at="2023-03-28T19:38:19 ICT" finished-at="2023-03-28T19:38:32 ICT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13000" started-at="2023-03-28T19:38:19 ICT" finished-at="2023-03-28T19:38:32 ICT">
+      <class name="sample.NewTestShopee">
+        <test-method status="PASS" signature="sample()[pri:0, instance:sample.NewTestShopee@5ed828d]" name="sample" duration-ms="12974" started-at="2023-03-28T19:38:19 ICT" finished-at="2023-03-28T19:38:32 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample -->
+      </class> <!-- sample.NewTestShopee -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
