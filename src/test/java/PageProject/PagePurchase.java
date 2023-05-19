@@ -12,7 +12,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("https://www.demoblaze.com")
-public class PageBuy extends PageObject{
+public class PagePurchase extends PageObject{
 	private WebDriver driver = getDriver();
 	
 	WebElement groupitembutton;
@@ -33,7 +33,7 @@ public class PageBuy extends PageObject{
 	WebElement title;
 	WebElement remove;
 	String check;
-	public PageBuy(WebDriver driver) {
+	public PagePurchase(WebDriver driver) {
 		this.driver = driver;
 	}
 	public void chose_item(String type, String item) {

@@ -47,4 +47,18 @@ Feature: Test purchase product page "https://www.demoblaze.com/index.html"
 	 |Monitors|Apple monitor 24|#deleteItem('17d6e8d4-0dbd-2ef0-757f-53fce1750e72')|
 	 |Monitors|ASUS Full HD|#deleteItem('8b8c42d5-3486-60a1-38ae-a91b9cb0067e')|
 	
+	 @tag3
+	 Scenario: Test place order box
+	 Given Access purchase page
+	 When Access cart page
+	 And Open place order box and fill name "<name>" and card "<card>"
+	 Then Check error message
+	 And Accept error message
+	 Examples:
+	 |name|card|
+	 |an||
+	 ||456786435|
+	 |||
+	 
+	 
 	 
