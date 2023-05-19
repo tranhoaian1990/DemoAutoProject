@@ -2,12 +2,12 @@ package StepsProject;
 
 import org.openqa.selenium.WebDriver;
 
-import PageProject.PageBuy;
+import PageProject.PagePurchase;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class PurchaseScenarioSteps extends ScenarioSteps{
-	private PageBuy  pagebuy = new PageBuy(getDriver());
+	private PagePurchase  pagebuy = new PagePurchase(getDriver());
 	
 	@Step
 	public void open_purchase_page() {

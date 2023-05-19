@@ -53,7 +53,24 @@ public class StepPurchase {
 //		assertEquals(purchase.checkItem(item), null);
 //		
 //		}
-			
+	@When("Access cart page")
+	public void cartPage() {
+		purchase.cartPage();
+	}
+	@And("Open place order box and fill name {string} and card {string}")
+	public void orderBox(String name, String card) throws InterruptedException {
+		purchase.placeOrder(name, card);
+	
+	}
+	@Then("Check error message")
+	public void checkErrorMessage() throws InterruptedException {
+		Thread.sleep(1000);
+		assertEquals(purchase.addCartSuccess(),"Please fill out Name and Creditcard.");
+	}	
+	@And("Accept error message")
+	public void acceptMessage() throws InterruptedException {
+		purchase.addCartComplete();
+	}
 	}
 
 
